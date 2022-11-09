@@ -29,4 +29,4 @@ helm:
     replicaCount: 1
 
 kustomize:
-  dir: "./"
+  dir: ""
