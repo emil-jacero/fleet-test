@@ -2,8 +2,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: kubernetes-dashboard
-  namespace: kubernetes-dashboard
+  name: podinfo
+  namespace: podinfo
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
@@ -13,7 +13,7 @@ spec:
   tls:
     - hosts:
         - podinfo.elits1.larnet.eu
-      secretName: dashboard-cert-staging
+      secretName: podinfo-cert-staging
   rules:
     - host: podinfo.elits1.larnet.eu
       http:
