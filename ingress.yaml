@@ -12,10 +12,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - podinfo.elits1.larnet.eu
+        - podinfo.dev.larnet.eu
       secretName: podinfo-cert-staging
   rules:
-    - host: podinfo.elits1.larnet.eu
+    - host: podinfo.dev.larnet.eu
       http:
         paths:
           - path: /
